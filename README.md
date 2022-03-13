@@ -6,7 +6,7 @@ The project's building blocks and assumptions:
    2. The data itslef is located under `prisma/dev.db`
 
 ## Work-of-art design:
-![](/Users/udibenamitai/Desktop/Screen Shot 2022-03-13 at 23.25.41.png)
+![](public/art.png)
 
 ## To run
 ```bash
