@@ -1,3 +1,14 @@
-.tower {
-    border: blue 1px solid;
+.title {
+    font-size: 20px;
+    text-align: center;
+}
+
+.carrierWrapper {
+    position: relative;
+}
+
+.clearIcon {
+    position: absolute;
+    left: -25px;
+    top: 12px;
 }

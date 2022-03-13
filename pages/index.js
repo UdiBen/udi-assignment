@@ -39,11 +39,13 @@ export default function Home() {
         carriers={carriers}
         selectedCarrier={selectedCarrier}
         updateCarriers={updateCarriers}
+        setSelectedCarrier={selectCarrier}
       />
       <Carriers
         selectedCarrier={selectedCarrier}
         setSelectedCarrier={selectCarrier}
         carriers={carriers}
+        updateCarriers={updateCarriers}
       />
     </div>
   );

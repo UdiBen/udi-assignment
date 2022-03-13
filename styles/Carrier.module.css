@@ -1,4 +1,6 @@
 .carrier {
+    border: lightgray 1px solid;
+    min-height: 50px;
 }
 
 .selectedCarrier {

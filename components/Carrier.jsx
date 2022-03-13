@@ -3,7 +3,11 @@ import PropTypes from 'prop-types';
 import { ListItem, ListItemButton, ListItemText } from '@mui/material';
 import styles from '../styles/Carrier.module.css';
 import classnames from 'classnames';
-export function Carrier({ carrier, selectedCarrier, setSelectedCarrier }) {
+export function Carrier({ carrier, selectedCarrier }) {
+  if (!carrier) {
+    return <div className={styles.carrier} />;
+  }
+
   return (
     <ListItem
       disablePadding
@@ -11,7 +15,7 @@ export function Carrier({ carrier, selectedCarrier, setSelectedCarrier }) {
         [styles.selectedCarrier]: carrier === selectedCarrier,
       })}
     >
-      <ListItemButton onClick={() => setSelectedCarrier(carrier)}>
+      <ListItemButton>
         <ListItemText primary={carrier.name} />
       </ListItemButton>
     </ListItem>
@@ -21,5 +25,4 @@ export function Carrier({ carrier, selectedCarrier, setSelectedCarrier }) {
 Carrier.propTypes = {
   carrier: PropTypes.object,
   selectedCarrier: PropTypes.object,
-  setSelectedCarrier: PropTypes.func,
 };
