@@ -10,7 +10,6 @@ export default async function handler(req, res) {
     res.status(200).json(data);
   } else if (req.method === 'POST') {
     const carriers = req.body;
-    console.log(carriers, carriers[0]);
     for (let i = 0; i < carriers.length; i++) {
       await prisma.layers.update({
         where: { id: carriers[i].id },
